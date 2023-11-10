@@ -1,0 +1,30 @@
+{
+    "name": "TMO Extension by Eduardo Segura",
+    "version": "2.0",
+    "permissions": [
+        "scripting",
+        "activeTab"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "prev": {
+        "suggested_key": "Ctrl+Comma",
+        "description": "Inject a script on the page to press Prev button in tmo"
+      },
+      "next": {
+        "suggested_key": "Ctrl+Period",
+        "description": "Inject a script on the page to press Next button in tmo"
+      },
+      "back": {
+        "suggested_key": "Ctrl+Delete",
+        "description": "Inject a script on the page to press back button in tmo"
+      }
+    }
+}
